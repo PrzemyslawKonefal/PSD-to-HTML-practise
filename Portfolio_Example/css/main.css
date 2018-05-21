@@ -70,11 +70,10 @@ nav > img{
 main > div{
   position: relative;
   margin-left: 180px;
-  min-height: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
+  padding: 10% 10% 5% 5%;
 }
 #front-page{
-  padding: 10% 10% 5% 5%;
   background-image: url(../img/backgroundd.png);
   background-repeat: no-repeat;
   background-position: right 70%;
@@ -117,28 +116,25 @@ main > div{
 }
 #portfolio{
     border-top: 2px solid #3412ac;
-    padding: 5%;
     z-index: 4;
 }
-#portfolio::before{
+main > div::before{
   content: " ";
   position: absolute;
   top: 0;
   left: 0;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background: #3412ac;
   transform: translate(-50%, -50%);
   z-index: 2;
 }
 #portfolio h5{
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 .cards{
-
-}
-.cards > div{
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -150,6 +146,7 @@ main > div{
   height: 300px;
   background: #fff;
   margin: 15px;
+  margin-left: 0;
   color: #000;
 }
 .card:hover{
@@ -165,9 +162,6 @@ main > div{
 .card p::first-line{
   font-weight: 700;
 }
-.card:first-of-type{
-  margin-left: 0;
-}
 .projectTrigger{
   background: #4d12e6;
   padding: 5px;
@@ -178,4 +172,21 @@ main > div{
   border-radius: 50%;
   color: #fff;
   cursor: pointer;
+}
+@media only screen and (max-width: 916px) {
+    .cards {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 685px) {
+    nav{
+      left: -180px;
+    }
+    main >div{
+      padding: 80px 10% 5% 5%;
+      margin-left: 5px;
+    }
+    #front-page h1 {
+        font-size: 80px;
+    }
 }
