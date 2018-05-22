@@ -282,6 +282,8 @@ main > div::before{
   display: flex;
   font-family: 'Didact Gothic', sans-serif;
   color: #000;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 #contact-inner >div{
   height: 500px;
@@ -349,7 +351,11 @@ main > div::before{
   color:inherit;
 }
 #googleMap{
-  width: 500px;
+  width: 50%;
+  min-width: 300px;
+  margin-top: 15px;
+  margin-left: 50px;
+  border-radius: 8px;
 }
 
 @media only screen and (max-width: 1430px){
@@ -364,6 +370,17 @@ main > div::before{
 @media only screen and (max-width: 1200px){
   #skills .cards{
     width: 80%;
+  }
+}
+@media only screen and (max-width: 1105px){
+  #contact-inner{
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 996px){
+  #googleMap{
+    width: 90%;
+    margin: 15px 0; 
   }
 }
 @media only screen and (max-width: 960px) {
