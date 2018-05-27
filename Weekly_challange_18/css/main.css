@@ -52,10 +52,12 @@ header {
   #inner-header h1 {
     font-size: 47.07px;
     line-height: 113px;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 0; }
     #inner-header h1 span:first-of-type {
       font-size: 206.48px;
       padding: 0;
+      background: #dbdbdb;
       background: -webkit-linear-gradient(41deg, #dbdbdb 0%, #290a59 0%, #a21af0 0%, #ff0072 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
@@ -63,7 +65,11 @@ header {
       letter-spacing: 40px;
       font-size: 118.54px;
       line-height: 50px; }
+  #inner-header h4 {
+    position: relative;
+    top: -20px; }
   #inner-header button {
+    background: #dbdbdb;
     background: linear-gradient(41deg, #dbdbdb 0%, #290a59 0%, #a21af0 0%, #ff0072 100%);
     color: #fff;
     border: none;
@@ -72,7 +78,8 @@ header {
     font-size: 18px;
     line-height: 100%;
     font-weight: 600;
-    margin-top: 70px; }
+    margin-top: 30px;
+    margin-bottom: 120px; }
 
 #personal-info {
   background-image: url(../img/background2.png);
@@ -123,6 +130,7 @@ header {
   max-width: 300px;
   height: 9px;
   border-radius: 8px;
+  background: #a21af0;
   background: linear-gradient(41deg, #a21af0 48%, #ff0072 52%); }
 
 #contact-banner {
@@ -164,5 +172,47 @@ header {
     margin-bottom: 18px; }
   .contact-content a {
     color: inherit; }
+
+#services {
+  text-align: center;
+  color: #4d4d4d; }
+  #services > * {
+    margin-bottom: 0; }
+  #services h2 {
+    color: #15263e;
+    font-weight: 600;
+    margin-top: 70px;
+    font-size: 40px; }
+  #services > p {
+    margin-top: 20px; }
+
+#service-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.service-feature {
+  min-width: 320px;
+  padding: 0 10px;
+  margin-top: 70px; }
+  .service-feature h4 {
+    margin-bottom: 27px; }
+  .service-feature p {
+    width: 320px;
+    margin: auto; }
+
+.service-box {
+  background: #dbdbdb;
+  background: -webkit-linear-gradient(41deg, #dbdbdb 0%, #290a59 0%, #a21af0 0%, #ff0072 100%);
+  background: linear-gradient(41deg, #dbdbdb 0%, #290a59 0%, #a21af0 0%, #ff0072 100%);
+  margin: auto;
+  height: 113px;
+  width: 113px;
+  margin-bottom: 27px; }
+
+.service-icon {
+  color: #fff;
+  font-size: 40px;
+  height: 113px; }
 
 /*# sourceMappingURL=main.css.map */

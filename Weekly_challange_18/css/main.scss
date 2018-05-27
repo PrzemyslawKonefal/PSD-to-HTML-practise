@@ -59,9 +59,11 @@ header{
     font-size: 47.07px;
     line-height: 113px;
     text-align: center;
+    margin-bottom: 0;
     span:first-of-type{
       font-size: 206.48px;
       padding: 0;
+      background: #dbdbdb;
       background: -webkit-linear-gradient(41deg, #dbdbdb 0%, #290a59 0%, #a21af0 0%, #ff0072 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -73,7 +75,12 @@ header{
 
     }
   }
+  h4{
+    position: relative;
+    top: -20px;
+  }
   button{
+    background: #dbdbdb;
     background: linear-gradient(41deg, #dbdbdb 0%, #290a59 0%, #a21af0 0%, #ff0072 100%);
     color: #fff;
     border: none;
@@ -82,7 +89,8 @@ header{
     font-size: 18px;
     line-height: 100%;
     font-weight: 600;
-    margin-top: 70px;
+    margin-top: 30px;
+    margin-bottom: 120px;
   }
 }
 #personal-info{
@@ -140,6 +148,7 @@ header{
     max-width: 300px;
     height: 9px;
     border-radius: 8px;
+    background: #a21af0;
     background: linear-gradient(41deg, #a21af0 48%, #ff0072 52%);
   }
 }
@@ -185,4 +194,52 @@ header{
   a{
     color: inherit;
   }
+}
+#services{
+  text-align: center;
+  color: #4d4d4d;
+   >*{
+     margin-bottom: 0;
+   }
+  h2{
+    color: #15263e;
+    font-weight: 600;
+    margin-top: 70px;
+    font-size: 40px;
+  }
+  >p{
+    margin-top: 20px;
+  }
+}
+#service-features{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service-feature{
+  min-width: 320px;
+  padding: 0 10px;
+  margin-top: 70px;
+
+  h4{
+    margin-bottom: 27px;
+  }
+  p{
+    width: 320px;
+    margin: auto;
+  }
+}
+.service-box{
+  background: #dbdbdb;
+  background: -webkit-linear-gradient(41deg, #dbdbdb 0%, #290a59 0%, #a21af0 0%, #ff0072 100%);
+  background: linear-gradient(41deg, #dbdbdb 0%, #290a59 0%, #a21af0 0%, #ff0072 100%);
+  margin: auto;
+  height: 113px;
+  width: 113px;
+  margin-bottom: 27px;
+}
+.service-icon{
+  color: #fff;
+  font-size: 40px;
+  height: 113px;
 }
