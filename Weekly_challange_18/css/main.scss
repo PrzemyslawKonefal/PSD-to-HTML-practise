@@ -36,8 +36,22 @@ nav{
     }
   }
 }
-
-header{
+.section-description{
+  text-align: center;
+  padding-top: 80px;
+  >h2{
+    margin-bottom: 25px;
+    color: #15263e;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  >p{
+      color: #4d4d4d;
+      margin-bottom: 0;
+      font-weight: 600;
+  }
+}
+#main-header{
   width: 100%;
   height: calc(100% - 70px);
   background-image: url("../img/backgroundup.png");
@@ -315,18 +329,7 @@ header{
   }
 }
 #portfolio{
-  text-align: center;
   color: #4d4d4d;
-  >h2{
-    margin: 80px 0 25px 0;
-    color: #15263e;
-    font-weight: 600;
-    font-size: 40px;
-  }
-  >p{
-  font-weight: 600;
-  margin-bottom: 0;
-  }
 }
 #main-portfolio{
   margin: 65px 0 80px 0;
@@ -376,6 +379,73 @@ header{
   color: #a91aef;
 }
 
+#experience{
+  background: #ff0072;
+  background: linear-gradient(41deg, #a21af0 12%, #ff0072 88%);
+  color: #fff;
+  .section-description{
+    *{
+      color: #fff;
+    }
+  }
+}
+#experience-content{
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0 50px 0;
+}
+.experience-post{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 50px;
+  h3{
+    position: relative;
+    font-weight: 600px;
+    text-align: right;
+    font-size: 24px;
+    padding-right: 25px;
+    margin-right: 20px;
+    border-right: 15px solid #fff;
+    span{
+      font-size: 0.8em;
+      letter-spacing: 2px;
+    }
+  }
+  p{
+    max-width: 600px;
+    position: relative;
+    bottom: 10px;
+    padding: 0 5px;
+  }
+  &:nth-of-type(even){
+    flex-direction: row-reverse;
+    h3{
+      text-align: left;
+      border-left: 15px solid #fff;
+      border-right: 0;
+      padding-left: 25px;
+      margin-left: 20px;
+    }
+    p{
+      text-align: right;
+    }
+  }
+}
+@media only screen and (max-width: 600px){
+  .experience-post{
+    flex-wrap: wrap;
+    text-align: center !important;
+    p{
+      margin-top: 20px;
+    }
+    &:nth-of-type(even){
+      p{
+        text-align: center;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 500px){
   .portfolio-project{
     width: 100%;

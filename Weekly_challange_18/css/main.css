@@ -31,7 +31,20 @@ nav {
     nav .nav-item:last-of-type:after {
       display: none; }
 
-header {
+.section-description {
+  text-align: center;
+  padding-top: 80px; }
+  .section-description > h2 {
+    margin-bottom: 25px;
+    color: #15263e;
+    font-size: 40px;
+    font-weight: 600; }
+  .section-description > p {
+    color: #4d4d4d;
+    margin-bottom: 0;
+    font-weight: 600; }
+
+#main-header {
   width: 100%;
   height: calc(100% - 70px);
   background-image: url("../img/backgroundup.png");
@@ -280,16 +293,7 @@ header {
       font-weight: 700; }
 
 #portfolio {
-  text-align: center;
   color: #4d4d4d; }
-  #portfolio > h2 {
-    margin: 80px 0 25px 0;
-    color: #15263e;
-    font-weight: 600;
-    font-size: 40px; }
-  #portfolio > p {
-    font-weight: 600;
-    margin-bottom: 0; }
 
 #main-portfolio {
   margin: 65px 0 80px 0;
@@ -333,6 +337,58 @@ header {
 .active-filter {
   color: #a91aef; }
 
+#experience {
+  background: #ff0072;
+  background: linear-gradient(41deg, #a21af0 12%, #ff0072 88%);
+  color: #fff; }
+  #experience .section-description * {
+    color: #fff; }
+
+#experience-content {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0 50px 0; }
+
+.experience-post {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 50px; }
+  .experience-post h3 {
+    position: relative;
+    font-weight: 600px;
+    text-align: right;
+    font-size: 24px;
+    padding-right: 25px;
+    margin-right: 20px;
+    border-right: 15px solid #fff; }
+    .experience-post h3 span {
+      font-size: 0.8em;
+      letter-spacing: 2px; }
+  .experience-post p {
+    max-width: 600px;
+    position: relative;
+    bottom: 10px;
+    padding: 0 5px; }
+  .experience-post:nth-of-type(even) {
+    flex-direction: row-reverse; }
+    .experience-post:nth-of-type(even) h3 {
+      text-align: left;
+      border-left: 15px solid #fff;
+      border-right: 0;
+      padding-left: 25px;
+      margin-left: 20px; }
+    .experience-post:nth-of-type(even) p {
+      text-align: right; }
+
+@media only screen and (max-width: 600px) {
+  .experience-post {
+    flex-wrap: wrap;
+    text-align: center !important; }
+    .experience-post p {
+      margin-top: 20px; }
+    .experience-post:nth-of-type(even) p {
+      text-align: center; } }
 @media only screen and (max-width: 500px) {
   .portfolio-project {
     width: 100%;
