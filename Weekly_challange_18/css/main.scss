@@ -372,9 +372,11 @@ nav{
   width: 40%;
   min-width: 120px;
   margin: 0 7px 14px 7px;
+  overflow: hidden;
   img{
     width: 100%;
     height: 100%;
+    transition: .4s ease;
   }
 }
 .active-filter{
@@ -500,6 +502,7 @@ nav{
   right:0;
   background: red;
   z-index: 0;
+  filter: grayscale(100%);
 }
 #contact-message{
   display: flex;
