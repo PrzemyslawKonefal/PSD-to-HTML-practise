@@ -144,6 +144,8 @@ header {
 
 .contact-data {
   min-width: 300px;
+  max-width: 400px;
+  width: 30%;
   height: 100px;
   display: flex;
   padding-top: 6.5px; }
@@ -189,7 +191,8 @@ header {
 #service-features {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 150px; }
 
 .service-feature {
   min-width: 320px;
@@ -214,5 +217,64 @@ header {
   color: #fff;
   font-size: 40px;
   height: 113px; }
+
+#testimonials {
+  min-height: 600px;
+  background-image: url(../img/testimonial-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 66%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff; }
+  #testimonials h2 {
+    text-align: center;
+    margin: 100px 0;
+    font-weight: 600;
+    font-size: 40px; }
+
+.single-testimonial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .single-testimonial img {
+    border-radius: 50%;
+    border: 10px solid #fff; }
+
+.quote {
+  position: relative;
+  text-align: right;
+  font-size: 15px;
+  max-width: 400px;
+  margin: 0 100px 20px 100px; }
+  .quote .fa-quote-right, .quote .fa-quote-left {
+    position: absolute;
+    font-size: 23px; }
+  .quote .fa-quote-right {
+    bottom: 0;
+    right: -45px;
+    transform: translateY(60%); }
+  .quote .fa-quote-left {
+    top: 0;
+    left: -35px;
+    transform: translateY(-80%); }
+
+.testimonial-person {
+  display: flex;
+  align-items: center; }
+  .testimonial-person h3 {
+    font-size: 34px;
+    text-align: center;
+    margin: 0 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 27px; }
+    .testimonial-person h3 span {
+      font-size: 0.5em;
+      letter-spacing: normal;
+      color: #c713d6;
+      line-height: 10px;
+      font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */
