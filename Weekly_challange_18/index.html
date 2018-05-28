@@ -11,7 +11,7 @@
   </head>
   <body>
     <nav>
-      <nav class="navbar navbar-expand-lg fixed-top" style="transition: .3s ease-out;">
+      <nav class="navbar navbar-expand-lg  fixed-top" style="transition: .3s ease-out;">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span><i class="fas fa-bars" style="color: #fff;"></i></span>
           </button>
@@ -45,12 +45,13 @@
 
     <header id="main-header">
         <div id="inner-header">
-          <h1>HELLO, I AM <br> <span>JOHN</span> <br> <span>SMITH</span> </h1>
+          <h1>HELLO, I AM <br> <span>JOHN</span> <br> <span>SMIT<span>H</span></span> </h1>
           <h4>I HAVE MORE THEN 10 YEARS OF EXPERIENCE</h4>
-          <button type="button" name="button">DOWNLOAD CV</button>
+          <button class="action-button" type="button" name="button">DOWNLOAD CV</button>
         </div>
     </header>
-    <section id="personal-info">
+    <section>
+      <div id="personal-info">
         <article class="flex-wrap" id="introduction">
           <h2>JOHN SMITH</h2>
           <h4>WEB DESIGNER</h4>
@@ -62,6 +63,7 @@
             <h6>MARKETING ( 50% )</h6>
             <h6>BRANDING ( 30% )</h6>
         </article>
+        </div>
         <div id="contact-banner">
             <div class="contact-data">
               <div class="icon-box">
@@ -251,9 +253,29 @@
       </section>
     </section>
 
+    <section id="contact">
+      <div id="googleMap"></div>
+      <section id="contact-inner">
+        <header class="section-description">
+          <h2>CONTACT US</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </header>
+        <form id="contact-message" action="index.html" method="post">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="tel" name="phone" placeholder="Phone">
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Message" required></textarea>
+        </form>
+        <button class="action-button" type="submit" form="contact-message" value="SEND MESSAGE">SEND MESSAGE</button>
+      </section>
+    </section>
+    <footer>
+      <p>Copyright 2017 by PSDFreebies.com. All Rights Reserved</p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArlt3dbCrjbyPcHX-uPGD0PWDelypPveQ&callback=myMap"></script>
   </body>
 </html>

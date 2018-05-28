@@ -8,8 +8,12 @@ html, body {
 body * {
   font-family: 'Poppins', sans-serif; }
 
+a:hover {
+  transition: .3s ease;
+  color: #a21af0 !important; }
+
 nav {
-  height: 70px;
+  min-height: 70px;
   background: #15263e; }
   nav .nav-link {
     color: #fff;
@@ -37,12 +41,12 @@ nav {
   .section-description > h2 {
     margin-bottom: 25px;
     color: #15263e;
-    font-size: 40px;
-    font-weight: 600; }
+    font-size: 50px;
+    font-weight: 700; }
   .section-description > p {
     color: #4d4d4d;
     margin-bottom: 0;
-    font-weight: 600; }
+    letter-spacing: 2px; }
 
 #main-header {
   width: 100%;
@@ -67,36 +71,43 @@ nav {
     line-height: 113px;
     text-align: center;
     margin-bottom: 0; }
-    #inner-header h1 span:first-of-type {
+    #inner-header h1 > span:first-of-type {
       font-size: 206.48px;
       padding: 0;
       background: #dbdbdb;
       background: -webkit-linear-gradient(41deg, #dbdbdb 0%, #290a59 0%, #a21af0 0%, #ff0072 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-    #inner-header h1 span:last-of-type {
+    #inner-header h1 > span:last-of-type {
       letter-spacing: 40px;
       font-size: 118.54px;
       line-height: 50px; }
+      #inner-header h1 > span:last-of-type span {
+        letter-spacing: 0px; }
   #inner-header h4 {
     position: relative;
     top: -20px; }
-  #inner-header button {
-    background: #dbdbdb;
-    background: linear-gradient(41deg, #dbdbdb 0%, #290a59 0%, #a21af0 0%, #ff0072 100%);
-    color: #fff;
-    border: none;
-    width: 214px;
-    height: 67px;
-    font-size: 18px;
-    line-height: 100%;
-    font-weight: 600;
-    margin-top: 30px;
-    margin-bottom: 120px; }
+
+.action-button {
+  display: block;
+  background: #dbdbdb;
+  background: linear-gradient(41deg, #dbdbdb 0%, #290a59 0%, #a21af0 0%, #ff0072 100%);
+  color: #fff;
+  border: none;
+  width: 214px;
+  height: 67px;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 600;
+  margin: 30px auto 120px auto;
+  transition: .3s ease; }
+  .action-button:hover {
+    letter-spacing: 2px;
+    cursor: pointer; }
 
 #personal-info {
   background-image: url(../img/background2.png);
-  background-position: center top;
+  background-position: center bottom;
   background-repeat: no-repeat;
   display: flex;
   flex-wrap: wrap;
@@ -132,7 +143,8 @@ nav {
   position: relative;
   text-align: center;
   color: #4d4d4d;
-  font-weight: 600; }
+  font-weight: 600;
+  margin-top: 30px; }
 #skills-percentage h6::after {
   content: '';
   position: absolute;
@@ -156,7 +168,7 @@ nav {
   background: #dcdcde; }
 
 .contact-data {
-  min-width: 300px;
+  min-width: 320px;
   max-width: 400px;
   width: 30%;
   height: 100px;
@@ -409,6 +421,99 @@ nav {
     margin-top: 12px;
     margin-bottom: 0; }
 
+#contact {
+  position: relative;
+  padding: 70px; }
+
+#contact-inner {
+  position: relative;
+  z-index: 2;
+  width: 85%;
+  margin: auto;
+  padding-bottom: 5px;
+  background: #15263e; }
+  #contact-inner .section-description * {
+    color: #fff; }
+
+#googleMap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: red;
+  z-index: 0; }
+
+#contact-message {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 80px 10% 10px 10%; }
+  #contact-message input, #contact-message textarea {
+    padding-left: 20px;
+    transition: .3s ease;
+    font-size: 18px;
+    transition: .3s ease; }
+    #contact-message input:focus, #contact-message textarea:focus {
+      background: #e9e3e3; }
+  #contact-message input {
+    flex-grow: 1;
+    height: 55px;
+    min-width: 150px;
+    margin: 0 25px 25px 0; }
+    #contact-message input:last-of-type {
+      margin-right: 0; }
+  #contact-message textarea {
+    resize: none;
+    width: 100%;
+    padding-top: 5px;
+    min-height: 150px; }
+
+footer {
+  padding: 40px 10px;
+  text-align: center; }
+  footer p {
+    margin: 0; }
+
+@media only screen and (max-width: 1338px) {
+  #contact-message input:nth-of-type(2) {
+    margin-right: 0; }
+  #contact-message input:last-of-type {
+    width: 100%; } }
+@media only screen and (max-width: 991px) {
+  .nav-item:after {
+    display: none; } }
+@media only screen and (max-width: 935px) {
+  #contact-message input:first-of-type {
+    margin-right: 0;
+    width: 100%; } }
+@media only screen and (max-width: 820px) {
+  #inner-header h1 {
+    line-height: 62px; }
+    #inner-header h1 > span:first-of-type {
+      font-size: 103.48px; }
+    #inner-header h1 > span:last-of-type {
+      font-size: 59.54px; }
+  #inner-header h4 {
+    top: 0px; }
+
+  #personal-info {
+    flex-direction: column;
+    align-items: center;
+    background: #fff; }
+    #personal-info article {
+      width: 100%;
+      max-width: 600px; }
+
+  #introduction {
+    text-align: center; }
+
+  #contact {
+    padding: 0; }
+
+  #contact-inner {
+    margin: 0;
+    width: 100%; } }
 @media only screen and (max-width: 700px) {
   .blog-post {
     margin: 15px 5px 0 5px;
