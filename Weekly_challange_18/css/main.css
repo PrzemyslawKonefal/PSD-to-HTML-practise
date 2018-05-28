@@ -193,14 +193,6 @@ nav {
   color: #4d4d4d; }
   #services > * {
     margin-bottom: 0; }
-  #services h2 {
-    color: #15263e;
-    font-weight: 600;
-    margin-top: 80px;
-    font-size: 40px; }
-  #services > p {
-    margin-top: 20px;
-    font-weight: 600; }
 
 #service-features {
   display: flex;
@@ -353,7 +345,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  padding: 0 7px; }
   .experience-post h3 {
     position: relative;
     font-weight: 600px;
@@ -366,21 +359,62 @@ nav {
       font-size: 0.8em;
       letter-spacing: 2px; }
   .experience-post p {
-    max-width: 600px;
+    max-width: 700px;
     position: relative;
     bottom: 10px;
-    padding: 0 5px; }
+    padding: 0 5px;
+    font-size: 15px; }
   .experience-post:nth-of-type(even) {
     flex-direction: row-reverse; }
     .experience-post:nth-of-type(even) h3 {
       text-align: left;
       border-left: 15px solid #fff;
       border-right: 0;
+      padding-right: 0;
+      margin-right: 0;
       padding-left: 25px;
       margin-left: 20px; }
     .experience-post:nth-of-type(even) p {
       text-align: right; }
 
+#blog-posts {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center; }
+
+.blog-post {
+  width: 22%;
+  max-width: 400px;
+  margin: 15px 20px 0 20px; }
+  .blog-post img {
+    height: 18vw;
+    max-height: 250px;
+    width: 100%; }
+  .blog-post h6 {
+    color: #929292;
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600; }
+  .blog-post a {
+    display: block;
+    color: #15263e;
+    font-weight: 600;
+    margin-top: 7px; }
+  .blog-post .blog-post-description {
+    color: #494949;
+    font-size: 12px;
+    padding-right: 8px;
+    margin-top: 12px;
+    margin-bottom: 0; }
+
+@media only screen and (max-width: 700px) {
+  .blog-post {
+    margin: 15px 5px 0 5px;
+    width: 25%; }
+    .blog-post img {
+      height: 22vw; } }
 @media only screen and (max-width: 600px) {
   .experience-post {
     flex-wrap: wrap;
@@ -392,6 +426,15 @@ nav {
 @media only screen and (max-width: 500px) {
   .portfolio-project {
     width: 100%;
-    margin: 0 14px 14px 7px; } }
+    margin: 0 14px 14px 7px; }
+
+  #blog-posts {
+    flex-direction: column;
+    align-items: center; }
+
+  .blog-post {
+    width: 85%; }
+    .blog-post img {
+      height: auto; } }
 
 /*# sourceMappingURL=main.css.map */
